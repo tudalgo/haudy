@@ -108,13 +108,24 @@
         ```
         Java.lang.OutOfMemoryError: java heap space
         ```
-        Dieser Fehler kann manchmal beim Ausführen der Public Tests auftretten. Versuchen Sie zunächst die Public Tests erneut auszuführen oder IntelliJ neuzustarten. Falls der Fehler weiterhin auftritt, versuchen Sie [Java mehr Speicher zuzuweisen].
+        Dieser Fehler kann manchmal beim Ausführen der Public Tests auftreten. Versuchen Sie zunächst die Public Tests erneut auszuführen oder IntelliJ neuzustarten. Falls der Fehler weiterhin auftritt, versuchen Sie [Java mehr Speicher zuzuweisen].
+
+    11. !!! error ""
+        ```
+        Unsupported Java. 
+        Your build is currently configured to use Java 21 and Gradle 8.4.
+
+        Possible solution:
+         - Use Java 20 as Gradle JVM: Open Gradle settings 
+         - Open Gradle wrapper settings, change `distributionUrl` property to use compatible Gradle version and reload the project
+        ```
+        Offiziell wird Java 21 noch nicht von Gradle unterstützt. Für die Bearbeitung der Hausübungen ist dies allerdings eigentlich kein Problem. Falls Sie die Fehlermeldung beim Erstellen der Abgabedatei erhalten, überprüfen Sie, ob Sie ihre Daten in der build.gradle.kts Datei richtig eingetragen haben. Falls Sie die Nachricht beim Öffnen der Hausübung als Hinweis erhalten, können Sie diese zunächst ignorieren. Als letzte Möglichkeit können Sie auch versuchen, die Java Version in IntelliJ auf Java 17 zu ändern. Siehe [Korrekte Java Version in IntelliJ einstellen]. 
 
     ### Korrekte Java Version in IntelliJ einstellen
 
-    1. Überprüfen Sie zunächst in einem Terminal mit **"java --version"**, ob Java 17 benutzt wird (s. [Anleitung zum Installieren von Java])
-    2. Überprüfen Sie in IntelliJ, ob unter **"File" -> "Project Structure..." -> "Project" -> "SDK"** Java 17 als Version angegeben ist.
-    * Falls dies nicht der Fall ist, wählen Sie Java 17 aus und drücken Sie auf **"Apply"**.
+    1. Überprüfen Sie zunächst in einem Terminal mit **"java --version"**, ob Java 17 oder höher benutzt wird. Siehe auch: [Anleitung zum Installieren von Java]
+    2. Überprüfen Sie in IntelliJ, ob unter **"File" -> "Project Structure..." -> "Project" -> "SDK"** Java 17 oder höher als Version angegeben ist.
+    * Falls dies nicht der Fall ist, wählen Sie Java 17 oder höher aus und drücken Sie auf **"Apply"**.
     3. Gehen Sie ebenfalls sicher, dass unter **"File" -> "Settings" -> "Build, Execution, Deployment" -> "Build Tools" -> "Gradle" -> "Gradle JVM"** als Option **"Project SDK"** ausgewählt ist.
 
     ### Java mehr Speicher zuweisen
