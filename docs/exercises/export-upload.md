@@ -13,6 +13,8 @@
     firstName = "Max"
     lastName = "Mustermann"
     ```
+    !!! warning "Warnung"
+        Bitte achten Sie darauf, dass sie Ihre TU-ID und **nicht** Ihre Matrikelnummer eintragen!
     * Verändern Sie bis auf diese drei Zeilen nichts Weiteres an der Datei.
     * Beachten Sie, dass die Anführungszeichen notwendig sind.
     * Falls Sie noch eine alte Version verwenden, sehen die Zeilen stattdessen wie folgt aus:
