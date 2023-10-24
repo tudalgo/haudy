@@ -119,7 +119,13 @@
          - Use Java 20 as Gradle JVM: Open Gradle settings 
          - Open Gradle wrapper settings, change `distributionUrl` property to use compatible Gradle version and reload the project
         ```
-        Offiziell wird Java 21 noch nicht von Gradle unterstützt. Für die Bearbeitung der Hausübungen ist dies allerdings eigentlich kein Problem. Falls Sie die Fehlermeldung beim Erstellen der Abgabedatei erhalten, überprüfen Sie, ob Sie ihre Daten in der build.gradle.kts Datei richtig eingetragen haben. Falls Sie die Nachricht beim Öffnen der Hausübung als Hinweis erhalten, können Sie diese zunächst ignorieren. Als letzte Möglichkeit können Sie auch versuchen, die Java Version in IntelliJ auf Java 17 zu ändern. Siehe [Korrekte Java Version in IntelliJ einstellen]. 
+        Offiziell wird Java 21 noch nicht von Gradle unterstützt. Für die Bearbeitung der Hausübungen ist dies allerdings eigentlich kein Problem. Falls Sie die Fehlermeldung beim Erstellen der Abgabedatei erhalten, überprüfen Sie, ob Sie ihre Daten in der build.gradle.kts Datei richtig eingetragen haben. Falls Sie die Nachricht beim Öffnen der Hausübung als Hinweis erhalten, können Sie diese zunächst ignorieren. Als letzte Möglichkeit können Sie auch versuchen, die Java Version in IntelliJ auf Java 17 zu ändern. Siehe [Korrekte Java Version in IntelliJ einstellen].
+
+    12. !!! error ""
+        ```
+        Exception in thread "main" java. Lang.IllegalArgumentException Create breakpoint : input == null!
+        ```
+        Wenn Sie diese Fehlermeldung beim Ausführen von FoPBot erhalten, liegt es daran, dass die Bilder zum Darstellen der Roboter nicht gefunden werden konnten. Falls die Systemsprache Ihres Computers nicht Englisch oder Deutsch ist, versuchen Sie die Sprache auf eine dieser beiden umzustellen und eventuell danach Ihren Computer neuzustarten
 
     ### Korrekte Java Version in IntelliJ einstellen
 
