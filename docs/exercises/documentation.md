@@ -102,6 +102,42 @@
     }
 
     /**
+     * A {@link FieldEntity} that represents a Wall on a game board at a given position.
+     * Walls do not do anything besides being an immovable obstacle.
+     */
+    public class Wall implements FieldEntity {
+    
+        /**
+         * The position of this wall on the game board.
+         * Walls do not move, so this position is immutable.
+         */
+        private final Vector position;
+    
+        /**
+         * Creates a new wall at the given position.
+         * @param position The position of this wall on the game board.
+         */
+        public Wall(Vector position) {
+            this.position = position;
+        }
+    
+        @Override
+        public void doAction() {
+            // Walls do not do anything
+        }
+    
+        @Override
+        public Vector getPosition() {
+            return position;
+        }
+    
+        @Override
+        public boolean isPlayer() {
+            return false;
+        }
+    }
+
+    /**
      * Represents an immutable, two-dimensional vector (x, y).
      *
      * @param x The first component of this vector.
@@ -264,6 +300,16 @@
     ```
     * Es fehlt eine genauere Beschreibung der Methode. Auch wenn Methoden in Interfaces nicht implementiert werden, 
       sollten trotzdem kurz beschrieben werden, was eine Implementierung der Methode tut.
+
+* !!! Example
+    ```java
+    /** 
+     * A class that implements FieldEntity. It implements all methods of FieldEntity.
+     */
+    public class Wall implements FieldEntity{...}
+    ```
+    * Es fehlt eine genauere Beschreibung was die Klasse macht und was ein Objekt dieser Klasse repräsentiert.
+    * Es ist nicht notwendig explizit zu erwähnen, dass die Klasse ein Interface implementiert und welche Methoden sie implementiert.
 
 [hier]: https://de.wikipedia.org/wiki/Javadoc#%C3%9Cbersicht_der_Javadoc-Tags
 [Dokumentation der Java Standardbibliothek]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html
