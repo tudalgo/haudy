@@ -18,31 +18,97 @@
     ```java
 
     /**
-     * Represents a immutable, two-dimensional vector (x, y).
+     * Represents a game board that consists of a two-dimensional square grid.
+     * On each field of the grid, there can be one {@link FieldEntity}.
+     * Each grid has exactly one start position where the player starts.
      */
-    public class Vector {
-    
+    public class GameBoard {
+
         /**
-         * The first component of this vector.
+         * The start position of the game board where the player starts.
          */
-        private final float x;
+        private Vector startPostion;
     
         /**
-         * The second component of this vector.
+         * The two-dimensional grid of the game board, where each field can contain one {@link FieldEntity}.
+         * The first index corresponds to the row (y-coordinate), the second index to the column (x-coordinate).
+         * A field is null if it does not contain a {@link FieldEntity}.
          */
-        private final float y;
+        private final FieldEntity[][] board;
     
         /**
-         * Constructs a new vector with the given components.
+         * Constructs a new game board with the given start position and size.
+         * The game board is initially empty, i.e. all fields are null.
+         * The size of the game board is the number of rows and columns.
          *
-         * @param x The first component of the created vector.
-         * @param y The second component of the created vector.
+         * @param startPosition The start position of the game board where the player starts.
+         * @param size The size of the square grid.
+         * @throws IllegalArgumentException if the size is less than 1 or the start position is not within the board.
          */
-        public Vector(float x, float y) {
-            this.x = x;
-            this.y = y;
+        public GameBoard(Vector startPosition, int size) throws IllegalArgumentException{
+    
+            if (size < 1) {
+                throw new IllegalArgumentException("Size must be at least 1!");
+            }
+    
+            if (startPosition.x() < 0 || startPosition.x() >= size || startPosition.y() < 0 || startPosition.y() >= size) {
+                throw new IllegalArgumentException("Start position must be within the board!");
+            }
+    
+            this.startPostion = startPosition;
+            this.board = new FieldEntity[size][size];
         }
     
+        /**
+         * Returns the start position of the game board where the player starts.
+         * @return the start position.
+        */
+        public Vector getStartPosition() {
+            return startPostion;
+        }
+    
+        /**
+         * Sets the start position of the game board where the player starts.
+         * @param startPosition the start position.
+        */
+        public void setStartPosition(Vector startPosition) {
+            this.startPostion = startPosition;
+        }
+    
+    }
+
+    /**
+     * Represents an entity that can be placed on a {@link GameBoard}.
+     */
+    public interface FieldEntity {
+
+        /**
+         * Executes this entity's action for the current turn.
+         * This method is called once per turn.
+        */
+        void doAction();
+    
+        /**
+         * Returns the current position of this entity on the game board.
+         * @return the current position.
+         */
+        Vector getPosition();
+    
+        /**
+         * Returns whether this entity is the player.
+         * @return true if this entity is the player, false otherwise.
+        */
+        boolean isPlayer();
+    }
+
+    /**
+     * Represents an immutable, two-dimensional vector (x, y).
+     *
+     * @param x The first component of this vector.
+     * @param y The second component of this vector.
+     */
+    public record Vector(int x, int y) {
+
         /**
          * Calculates the sum of the current vector and the given vector and returns the result as a new vector.
          * The current vector and the given vector are not modified.
@@ -53,17 +119,66 @@
         public Vector add(Vector other) {
             return new Vector(x + other.x, y + other.y);
         }
-    
+
         /**
          * Calculates the Euclidean norm of the current Vector.
          *
          * @return Euclidean norm of the vector (x,y)
          */
         public double euclid2() {
-            return Math.sqrt(x*x + y*y);
+            return Math.sqrt(x * x + y * y);
+        }
+
+    }
+
+    /**
+     * Represents a Direction in a two-dimensional grid.
+     */
+    public enum Direction {
+
+        /**
+         * The direction up. This direction corresponds to the vector (0, 1).
+         */
+        UP(new Vector(0, 1)),
+    
+        /**
+         * The direction down. This direction corresponds to the vector (0, -1).
+         */
+        DOWN(new Vector(0, -1)),
+    
+        /**
+         * The direction left. This direction corresponds to the vector (-1, 0).
+         */
+        LEFT(new Vector(-1, 0)),
+    
+        /**
+         * The direction right. This direction corresponds to the vector (1, 0).
+         */
+        RIGHT(new Vector(1, 0));
+
+        /**
+         * The vector describing the current Direction.
+         */
+        private final Vector directionVector;
+    
+        /**
+         * Constructs a new Direction along the given vector.
+         * @param directionVector The vector describing the current Direction.
+         */
+        public Direction(Vector directionVector) {
+            this.directionVector = directionVector;
         }
     
+        /**
+         * Returns a new vector which is the result of shifting the given position by the current direction.
+         * @param position The position to shift.
+         * @return The position shifted by the current direction.
+         */
+        public Vector apply(Vector position) {
+            return position.add(directionVector);
+        }
     }
+
     ```
 
 * In der [Dokumentation der Java Standardbibliothek] finden Sie etliche Beispiele, wie gute JavaDoc Kommentare aussehen sollten.
@@ -122,10 +237,10 @@
 * !!! Example
     ```java
     /** 
-     * @param x A float value.
-     * @param y A float value.
+     * @param x An int value.
+     * @param y An int value.
      */
-    public Vector(float x, float y) {
+    public Vector(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -133,6 +248,22 @@
     * Es fehlt eine Beschreibung des Konstruktors. Auch wenn der Konstruktor trivial ist, sollte er trotzdem kurz beschrieben werden.
     * Die Parameter werden nicht ausreichend beschrieben. Es sollte kurz erklärt werden, was die Parameter bedeuten und wie sie zu benutzen sind.
       Die Typen der Parameter werden nicht angegeben, da diese aus dem Methodenkopf ersichtlich sind.
+
+* !!! Example
+    ```java
+    /** 
+     * Does something.
+     */
+    public void doAction();
+  
+    /**
+     * Returns a boolean.
+     * @return a boolean.
+     */
+    public boolean isPlayer();
+    ```
+    * Es fehlt eine genauere Beschreibung der Methode. Auch wenn Methoden in Interfaces nicht implementiert werden, 
+      sollten trotzdem kurz beschrieben werden, was eine Implementierung der Methode tut.
 
 [hier]: https://de.wikipedia.org/wiki/Javadoc#%C3%9Cbersicht_der_Javadoc-Tags
 [Dokumentation der Java Standardbibliothek]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html
