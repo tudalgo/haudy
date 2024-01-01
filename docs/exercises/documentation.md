@@ -299,7 +299,9 @@
     public boolean isPlayer();
     ```
     * Es fehlt eine genauere Beschreibung der Methode. Auch wenn Methoden in Interfaces nicht implementiert werden, 
-      sollten trotzdem kurz beschrieben werden, was eine Implementierung der Methode tut.
+      sollte trotzdem kurz beschrieben werden, was eine Implementierung der Methode tut. Dies ist wichtig, damit
+      man beim Implementieren oder Benutzten des Interfaces weiß, welche Annahmen man treffen kann, bzw. muss, und wie
+      sich die Methoden einer beliebigen Implementation verhalten. 
 
 * !!! Example
     ```java
