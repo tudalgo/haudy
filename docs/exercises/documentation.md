@@ -170,7 +170,9 @@
     /**
      * Represents a Direction in a two-dimensional grid.
      */
-    public enum Direction {
+    public enum Direction { 
+
+        // Hinweis: Die Dokumentation der einzelnen Enum-Konstanten ist nicht verpfichtend, wird aber empfohlen.
 
         /**
          * The direction up. This direction corresponds to the vector (0, 1).
