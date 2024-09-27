@@ -54,5 +54,5 @@ Folgende Fragen wurden bereits in abgewandelter Form in unseren Sprechstunden ge
 * *Ich bekomme diese Fehlermeldung. Was bedeutet die?* (Ohne Versuch, diese zu verstehen.)
 * *Mein Code macht nicht das, was er soll :(*
 
-[Moodle-Forum]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1469&sectionid=18762
-[Vorlesungsinhalten ]: https://moodle.informatik.tu-darmstadt.de/mod/folder/view.php?id=61435
+[Moodle-Forum]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632&sectionid=21307
+[Vorlesungsinhalten ]: https://moodle.informatik.tu-darmstadt.de/mod/folder/view.php?id=68719

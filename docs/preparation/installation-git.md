@@ -47,7 +47,7 @@
 * Sie können nun mit dem Befehl **"git --version"** in einem [Terminal] überprüfen, ob Git erfolgreich installiert wurde.
     
 
-[GitHub]: https://github.com/FOP-2324
+[GitHub]: https://github.com/FOP-2425
 [Git]: https://git-scm.com/download
 [Terminal]: https://wiki.tudalgo.org/preparation/terminal/
 [Homebrew]: https://wiki.tudalgo.org/preparation/packagemanager/

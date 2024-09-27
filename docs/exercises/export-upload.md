@@ -30,7 +30,7 @@
 
 2. Öffnen Sie am rechten oberen Rand die Gradle Übersicht (das Elefantensymbol).
 
-3. Unter **"FOP-2324-HXX-Student" -> "Task" -> "build"** finden Sie die Gradle Task **"mainBuildSubmission"**. Führen Sie diese mit einem Doppelklick aus.
+3. Unter **"FOP-2425-HXX-Student" -> "Task" -> "build"** finden Sie die Gradle Task **"mainBuildSubmission"**. Führen Sie diese mit einem Doppelklick aus.
     * Wenn unten in der Konsole **"BUILD SUCCESSFUL"** steht, war das Erstellen der Abgabedatei erfolgreich.
     * Achten Sie darauf, dass Sie nicht die Task **"build"** ausführen, da diese nicht die Abgabedatei erstellt. Abgaben, die mit dieser Task erstellt wurden, können nicht bewertet werden.
 
@@ -56,7 +56,7 @@ Sie können wie folgt sicherstellen, dass Sie die Abgabedatei korrekt erstellt h
     * ein Ordner **hXX**, welcher der Package Struktur des Projektes entspricht und die Quelldateien (.java) enthält.
         * Falls nur .class Dateien vorhanden sind, haben Sie vermutlich die Task **"build/build"** und nicht **"build/mainBuildSubmission"** ausgeführt. Abgaben, die auf diese Art erstellt wurden, werden nicht bewertet.
 
-[Moodle]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1469&sectionid=18762
+[Moodle]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632&sectionid=21307
 [Gradle Task]: https://wiki.tudalgo.org/exercises/edit/#gradle-tasks
 [hier]: https://wiki.tudalgo.org/exercises/fix-errors/ 
 [Terminal]: https://wiki.tudalgo.org/preparation/terminal/

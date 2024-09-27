@@ -2,7 +2,7 @@
 
 === "Technische Fehler"
 
-    * Stellen Sie zunächst sicher, dass Sie den richtigen Ordner importiert haben. Der oberste Ordner sollte nach der Hausübung benannt sein (z. B. **"FOP-2324-HXX-Student-master"**) und direkt die build.gradle.kts Datei enthalten sein. Wählen Sie beim Importieren **nicht** einen identisch benannten Oberordner aus.
+    * Stellen Sie zunächst sicher, dass Sie den richtigen Ordner importiert haben. Der oberste Ordner sollte nach der Hausübung benannt sein (z. B. **"FOP-2425-HXX-Student-master"**) und direkt die build.gradle.kts Datei enthalten sein. Wählen Sie beim Importieren **nicht** einen identisch benannten Oberordner aus.
     * Beachten Sie, dass es mit Gradle zu Problemen kommen kann, wenn das Projekt auf einer externen Festplatte gespeichert wurde.
     * Anbei finden Sie ein paar mögliche Fehler, welche Ihnen in der Konsole, die sich beim Ausführen der des Programmes oder einer Gradle Task automatisch öffnet, angezeigt werden. Damit Ihnen die vollständigen Fehlermeldungen angezeigt werden, wählen Sie links von der Konsole die zweite Option von oben aus.
 
@@ -19,14 +19,14 @@
 
     2. !!! error ""
         ```
-        A problem occurred configuring root project 'FOP-2324-H00-Student'.
+        A problem occurred configuring root project 'FOP-2425-H00-Student'.
         Could not resolve all files for configuration ':classpath'.
         Could not resolve org.tudalgo:algomate:0.1.0-SNAPSHOT.
         ```
         oder
         ```
         Execution failed for task ':compileJava'.
-        error: invalid source release: 17
+        error: invalid source release: 21
         ```
         oder
         ```
@@ -119,7 +119,7 @@
          - Use Java 20 as Gradle JVM: Open Gradle settings 
          - Open Gradle wrapper settings, change `distributionUrl` property to use compatible Gradle version and reload the project
         ```
-        Offiziell wird Java 21 noch nicht von Gradle unterstützt. Für die Bearbeitung der Hausübungen ist dies allerdings eigentlich kein Problem. Falls Sie die Fehlermeldung in der Konsole angezigt bekommen, liegt dies meist eigentlich ein anderes Problem vor. Überprüfen Sie, ob links neben der Fehlermeldung in einem der anderen Logs eine andere Fehlermeldung angezeigt wird und beheben sie diese. Meist liegt es an kompilierfehler oder an fehlenden Daten in der build.gradle.kts Datei. Falls Sie die Nachricht beim Öffnen der Hausübung als Hinweis erhalten, können Sie diese zunächst ignorieren. Als letzte Möglichkeit können Sie auch versuchen, die Java Version in IntelliJ auf Java 17 zu ändern. Siehe dafür [Korrekte Java Version in IntelliJ einstellen].
+        Offiziell wird Java 21 noch nicht von Gradle unterstützt. Für die Bearbeitung der Hausübungen ist dies allerdings eigentlich kein Problem. Falls Sie die Fehlermeldung in der Konsole angezigt bekommen, liegt dies meist eigentlich ein anderes Problem vor. Überprüfen Sie, ob links neben der Fehlermeldung in einem der anderen Logs eine andere Fehlermeldung angezeigt wird und beheben sie diese. Meist liegt es an kompilierfehler oder an fehlenden Daten in der build.gradle.kts Datei. Falls Sie die Nachricht beim Öffnen der Hausübung als Hinweis erhalten, können Sie diese zunächst ignorieren. Als letzte Möglichkeit können Sie auch versuchen, die Java Version in IntelliJ auf Java 21 zu ändern. Siehe dafür [Korrekte Java Version in IntelliJ einstellen].
 
     12. !!! error ""
         ```
@@ -143,9 +143,9 @@
 
     ### Korrekte Java Version in IntelliJ einstellen
 
-    1. Überprüfen Sie zunächst in einem Terminal mit **"java --version"**, ob Java 17 oder höher benutzt wird. Siehe auch: [Anleitung zum Installieren von Java]
-    2. Überprüfen Sie in IntelliJ, ob unter **"File" -> "Project Structure..." -> "Project" -> "SDK"** Java 17 oder höher als Version angegeben ist.
-    * Falls dies nicht der Fall ist, wählen Sie Java 17 oder höher aus und drücken Sie auf **"Apply"**.
+    1. Überprüfen Sie zunächst in einem Terminal mit **"java --version"**, ob Java 21 oder höher benutzt wird. Siehe auch: [Anleitung zum Installieren von Java]
+    2. Überprüfen Sie in IntelliJ, ob unter **"File" -> "Project Structure..." -> "Project" -> "SDK"** Java 21 oder höher als Version angegeben ist.
+    * Falls dies nicht der Fall ist, wählen Sie Java 21 oder höher aus und drücken Sie auf **"Apply"**.
     3. Gehen Sie ebenfalls sicher, dass unter **"File" -> "Settings" -> "Build, Execution, Deployment" -> "Build Tools" -> "Gradle" -> "Gradle JVM"** als Option **"Project SDK"** ausgewählt ist.
 
     ### Java mehr Speicher zuweisen
@@ -553,5 +553,5 @@
 [Bevor Sie eine Sprechstunde besuchen]: /support/good-bad-questions
 [Debugging]: /exercises/fix-errors/#debugging
 [List]: https://docs.oracle.com/javase/8/docs/api/java/util/List.html
-[Moodle Forum für technische Fragen]: https://moodle.informatik.tu-darmstadt.de/mod/forum/view.php?id=60391
-[Discord Server]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1469&sectionid=18782
+[Moodle Forum für technische Fragen]: https://moodle.informatik.tu-darmstadt.de/mod/forum/view.php?id=68769
+[Discord Server]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632&sectionid=21309#sectionid-21230-title

@@ -1,9 +1,9 @@
 # Installieren von Java
 
 !!! warning "Warnung"
-    Zum Bearbeiten der Hausübungen benötigen Sie Java 17 oder höher. Beachten Sie, dass Ihre ggf. vorhandene Java 11 Installation dafür nicht ausreicht.
+    Zum Bearbeiten der Hausübungen benötigen Sie Java 21 oder höher. Beachten Sie, dass Ihre ggf. vorhandene Java 11 Installation dafür nicht ausreicht.
 
-* Überprüfen Sie zunächst, ob Sie bereits Java 17 oder höher installiert haben. Siehe dafür [Überprüfung der Installation]. Falls Sie Java 17 oder höher installiert haben, können Sie mit dem nächsten Abschnitt [Installation von IntelliJ] fortfahren.
+* Überprüfen Sie zunächst, ob Sie bereits Java 21 oder höher installiert haben. Siehe dafür [Überprüfung der Installation]. Falls Sie Java 21 oder höher installiert haben, können Sie mit dem nächsten Abschnitt [Installation von IntelliJ] fortfahren.
 
 === "Windows"
 
@@ -53,25 +53,25 @@
             ```
             und
             ```
-            sudo apt install openjdk-17-jdk
+            sudo apt install openjdk-21-jdk
             ```
 
     === "Fedora"
 
         1. Führen Sie folgenden Befehl in einem [Terminal] aus, um Java zu installieren:
             ```
-            sudo dnf install java-17-openjdk-devel
+            sudo dnf install java-21-openjdk-devel
             ```
 
     === "Arch Based Linux"
 
-        1. Installieren Sie Java 17 (als Root).
+        1. Installieren Sie Java 21 (als Root).
             ```
-            pacman -S openjdk17-src --needed
+            pacman -S openjdk21-src --needed
             ```
         2. Setzen Sie diese Java Version als Standard (als Root).
             ```
-            archlinux-java set java-17-openjdk
+            archlinux-java set java-21-openjdk
             ```
 
 ## Installation Überprüfen
@@ -81,17 +81,17 @@
 java --version
 ```
 
-* Wenn die Ausgabe in etwa so aussieht, ist die Installation erfolgreich. Achten Sie insbesondere darauf, dass es Java 17 oder höher ist.
+* Wenn die Ausgabe in etwa so aussieht, ist die Installation erfolgreich. Achten Sie insbesondere darauf, dass es Java 21 oder höher ist.
     ```
-    openjdk 21 2023-09-19
+    openjdk 21 2024-07-16
     ```
     oder 
     ```
-    openjdk 17.0.2 2023-08-24
+    openjdk version "21.0.4" 2024-07-16
     ```
 ## Windows - Umgebungsvariablen einstellen
 
-* Falls bei der [Überprüfung der Installation] eine veraltete Java Version (<17) angezeigt wird, überprüfen Sie wie folgt, ob die Umgebungsvariablen korrekt gesetzt sind.:
+* Falls bei der [Überprüfung der Installation] eine veraltete Java Version (<21) angezeigt wird, überprüfen Sie wie folgt, ob die Umgebungsvariablen korrekt gesetzt sind.:
     1. Geben Sie in die Windowssuche (Win + S) **"Systemumgebungsvariablen bearbeiten"** ein und öffnen Sie das Fenster.
     2. Drücken Sie rechts unten auf **"Umgebungsvariablen"**.
     3. Überprüfen Sie, ob in der unteren Liste eine Variable namens **"JAVA_HOME"** existiert und auf das Verzeichnis, in welchem Java installiert ist, zeigt.

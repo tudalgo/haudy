@@ -316,4 +316,4 @@
     * Es ist nicht notwendig explizit zu erwähnen, dass die Klasse ein Interface implementiert und welche Methoden sie implementiert.
 
 [hier]: https://de.wikipedia.org/wiki/Javadoc#%C3%9Cbersicht_der_Javadoc-Tags
-[Dokumentation der Java Standardbibliothek]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html
+[Dokumentation der Java Standardbibliothek]: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/module-summary.html

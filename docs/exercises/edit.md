@@ -90,7 +90,7 @@
 
 [Gradle Task]: https://wiki.tudalgo.org/exercises/edit/#gradle-tasks
 [hier]: https://wiki.tudalgo.org/exercises/download-import/#aktualisieren-der-vorlage
-[Moodle]: https://moodle.informatik.tu-darmstadt.de/mod/page/view.php?id=60388
+[Moodle]: https://moodle.informatik.tu-darmstadt.de/mod/page/view.php?id=68766
 [Java mehr Speicher zuzuweisen]: https://wiki.tudalgo.org/exercises/fix-errors/#java-mehr-speicher-zuweisen
 [Exportieren]: https://wiki.tudalgo.org/exercises/export-upload/#exportieren
 [Public Tests]: https://wiki.tudalgo.org/exercises/edit/#public-tests
