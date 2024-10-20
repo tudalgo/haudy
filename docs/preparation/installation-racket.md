@@ -60,6 +60,27 @@
 * Öffnen Sie nun DrRacket und gehen Sie auf oben auf **"Language"** -> **"Choose Language"** und wählen Sie unter **"Teaching Languages"** **"Advanced Student"** aus. Bestätigen Sie danach die Auswahl, indem Sie auf **"OK"** drücken.
 * Nun können Sie Racket Programme ausführen, indem Sie rechts oben auf **"Run"** drücken.
 
+## Windows - Umgebungsvariablen einstellen
+
+* Falls bei der Eingabe im Terminal von:
+```
+raco help
+```
+eine Fehlermeldung wie ungefähr folgende erscheint:
+```
+Der Befehl "raco" ist entweder falsch geschrieben oder konnte nicht gefunden werden.
+```
+überprüfen Sie wie folgt, ob ob die Umgebungsvariablen korrekt gesetzt sind.:
+    1. Geben Sie in die Windowssuche (Win + S) **"Systemumgebungsvariablen bearbeiten"** ein und öffnen Sie das Fenster.
+    2. Drücken Sie rechts unten auf **"Umgebungsvariablen"**.
+    3. Wählen Sie die Variable **"Path"** aus und drücken Sie auf **"Bearbeiten..."**.
+    4. In der nun angezeigten Liste sollte der Eintrag zum Installationspfad von Racket enthalten sein, der wie folgt aussehen könnte:
+    ```
+    C:\Program Files\Racket
+    ```
+    Falls nicht, fügen Sie diesen rechts oben mit dem Knopf **"Neu"** hinzu.
+    5. Schließen Sie mit **"OK"** alle Fenster und öffnen Sie ein neues Terminal. Es sollte nun die Hilfeausgabe von raco angezeigt werden.
+
 [hier]: https://download.racket-lang.org/
 [Terminal]: https://wiki.tudalgo.org/preparation/terminal/
 [Homebrew]: https://wiki.tudalgo.org/preparation/packagemanager/
