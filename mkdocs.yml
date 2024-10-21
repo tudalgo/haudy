@@ -38,6 +38,7 @@ nav:
     - Installieren von IntelliJ: preparation/installation-intellij.md
     - Installieren von DrRacket: preparation/installation-racket.md
     - Installieren von Git: preparation/installation-git.md
+    - Installationen für das Recap: preparation/installation-recap.md
     - Hinzufügen der Matrikelnummer: preparation/matriculation-number.md
   - Hausübungen:
     - Herunterladen und importieren: exercises/download-import.md

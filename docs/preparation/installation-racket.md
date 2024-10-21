@@ -35,15 +35,15 @@
          1. Laden Sie [hier] DrRacket herunter. Achten Sie darauf, dass Linux als Betriebssystem ausgewählt ist.
            * Alternativ können Sie es auch mit dem folgenden Befehl herunterladen:
            ```
-           wget https://mirror.racket-lang.org/installers/8.6/racket-8.6-x86_64-linux.sh
+           wget https://mirror.racket-lang.org/installers/8.14/racket-8.14-x86_64-linux-cs.sh
            ```
          2. Stellen Sie mit
          ```
-         chmod +x racket-8.6-x86_64-linux.sh
+         chmod +x racket-8.14-x86_64-linux-cs.sh
          ```
          sicher, dass der Installer ausführbar ist und führen Sie diesen dann mit
          ```
-         sudo ./racket-8.6-x86_64-linux.sh
+         sudo ./racket-8.14-x86_64-linux-cs.sh
          ```
          aus.
          4. Beantworten Sie die Fragen, die Ihnen im Terminal gestellt werden. Standardmäßig können diese mit **"no"**, **"1"** und **"/usr/local"** beantworten. 
@@ -60,7 +60,37 @@
 * Öffnen Sie nun DrRacket und gehen Sie auf oben auf **"Language"** -> **"Choose Language"** und wählen Sie unter **"Teaching Languages"** **"Advanced Student"** aus. Bestätigen Sie danach die Auswahl, indem Sie auf **"OK"** drücken.
 * Nun können Sie Racket Programme ausführen, indem Sie rechts oben auf **"Run"** drücken.
 
+## Installation überprüfen
+
+* Zum Überprüfen der Installation von Racket können Sie folgenden Befehl in einem [Terminal] ausführen:
+```
+racket --version
+```
+
+* Wenn die Ausgabe in etwa so aussieht, ist die Installation erfolgreich.
+    ```
+    Welcome to Racket v8.14 [cs].
+    ```
+## Windows - Umgebungsvariablen einstellen
+
+* Falls bei der [Überprüfung der Installation] eine Fehlermeldung wie
+```
+Der Befehl "racket" ist entweder falsch geschrieben
+oder konnte nicht gefunden werden.
+```
+angezeigt wird, überprüfen Sie wie folgt, ob die Umgebungsvariablen korrekt gesetzt sind.:
+    1. Geben Sie in die Windowssuche (Win + S) **"Systemumgebungsvariablen bearbeiten"** ein und öffnen Sie das Fenster.
+    2. Drücken Sie rechts unten auf **"Umgebungsvariablen"**.
+    3. Wählen Sie die Variable **"Path"** aus und drücken Sie auf **"Bearbeiten..."**.
+    4. In der nun angezeigten Liste sollte der Eintrag zum Installationspfad von Racket enthalten sein, der wie folgt aussehen könnte:
+    ```
+    C:\Program Files\Racket
+    ```
+    Falls nicht, fügen Sie diesen rechts oben mit dem Knopf **"Neu"** hinzu.
+    5. Schließen Sie mit **"OK"** alle Fenster und öffnen Sie ein neues Terminal. Es sollte nun die korrekte Racket Version angezeigt werden.
+
 [hier]: https://download.racket-lang.org/
 [Terminal]: https://wiki.tudalgo.org/preparation/terminal/
+[Überprüfung der Installation]: #installation-uberprufen
 [Homebrew]: https://wiki.tudalgo.org/preparation/packagemanager/
 [Scoop]: https://wiki.tudalgo.org/preparation/packagemanager/
