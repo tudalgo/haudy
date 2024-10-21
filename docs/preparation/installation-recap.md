@@ -64,7 +64,7 @@ Stellen Sie sicher, dass Sie bereits [Java] und [Racket] installiert haben.
     4. Drücken Sie **"Enter"**, um den Standardinstallationspfad zu akzeptieren oder geben Sie einen alternativen vollständigen Installationspfad an.
     5. Geben Sie **"Yes"** ein, um die Anaconda Distribution zu initialisieren.
     6. Schließen Sie nach Abschluss der Installation das aktuelle Terminal und öffnen Sie ein neues.
-    7. Geben Sie folgenden Befehl ein, um Ihre Installation zu verifizieren und als Ausgabe alle installieren Packages zu erhalten.
+    7. Geben Sie folgenden Befehl ein, um Ihre Installation zu verifizieren und als Ausgabe alle installierten Packages zu erhalten.
     ```
     conda list
     ```
