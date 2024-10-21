@@ -87,7 +87,7 @@ angezeigt wird, überprüfen Sie wie folgt, ob die Umgebungsvariablen korrekt ge
     C:\Program Files\Racket
     ```
     Falls nicht, fügen Sie diesen rechts oben mit dem Knopf **"Neu"** hinzu.
-    5. Schließen Sie mit **"OK"** alle Fenster und öffnen Sie ein neues Terminal. Es sollte nun die Hilfeausgabe von raco angezeigt werden.
+    5. Schließen Sie mit **"OK"** alle Fenster und öffnen Sie ein neues Terminal. Es sollte nun die korrekte Racket Version angezeigt werden.
 
 [hier]: https://download.racket-lang.org/
 [Terminal]: https://wiki.tudalgo.org/preparation/terminal/
