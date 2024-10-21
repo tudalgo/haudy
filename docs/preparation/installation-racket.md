@@ -60,17 +60,25 @@
 * Öffnen Sie nun DrRacket und gehen Sie auf oben auf **"Language"** -> **"Choose Language"** und wählen Sie unter **"Teaching Languages"** **"Advanced Student"** aus. Bestätigen Sie danach die Auswahl, indem Sie auf **"OK"** drücken.
 * Nun können Sie Racket Programme ausführen, indem Sie rechts oben auf **"Run"** drücken.
 
+## Installation überprüfen
+
+* Zum Überprüfen der Installation von Racket können Sie folgenden Befehl in einem [Terminal] ausführen:
+```
+racket --version
+```
+
+* Wenn die Ausgabe in etwa so aussieht, ist die Installation erfolgreich.
+    ```
+    Welcome to Racket v8.14 [cs].
+    ```
 ## Windows - Umgebungsvariablen einstellen
 
-* Falls bei der Eingabe im Terminal von:
+* Falls bei der [Überprüfung der Installation] eine Fehlermeldung wie
 ```
-raco help
+Der Befehl "racket" ist entweder falsch geschrieben
+oder konnte nicht gefunden werden.
 ```
-eine Fehlermeldung wie ungefähr folgende erscheint:
-```
-Der Befehl "raco" ist entweder falsch geschrieben oder konnte nicht gefunden werden.
-```
-überprüfen Sie wie folgt, ob ob die Umgebungsvariablen korrekt gesetzt sind.:
+angezeigt wird, überprüfen Sie wie folgt, ob die Umgebungsvariablen korrekt gesetzt sind.:
     1. Geben Sie in die Windowssuche (Win + S) **"Systemumgebungsvariablen bearbeiten"** ein und öffnen Sie das Fenster.
     2. Drücken Sie rechts unten auf **"Umgebungsvariablen"**.
     3. Wählen Sie die Variable **"Path"** aus und drücken Sie auf **"Bearbeiten..."**.
@@ -83,5 +91,6 @@ Der Befehl "raco" ist entweder falsch geschrieben oder konnte nicht gefunden wer
 
 [hier]: https://download.racket-lang.org/
 [Terminal]: https://wiki.tudalgo.org/preparation/terminal/
+[Überprüfung der Installation]: #installation-uberprufen
 [Homebrew]: https://wiki.tudalgo.org/preparation/packagemanager/
 [Scoop]: https://wiki.tudalgo.org/preparation/packagemanager/
