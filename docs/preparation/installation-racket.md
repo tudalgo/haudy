@@ -35,15 +35,15 @@
          1. Laden Sie [hier] DrRacket herunter. Achten Sie darauf, dass Linux als Betriebssystem ausgewählt ist.
            * Alternativ können Sie es auch mit dem folgenden Befehl herunterladen:
            ```
-           wget https://mirror.racket-lang.org/installers/8.6/racket-8.6-x86_64-linux.sh
+           wget https://mirror.racket-lang.org/installers/8.14/racket-8.14-x86_64-linux-cs.sh
            ```
          2. Stellen Sie mit
          ```
-         chmod +x racket-8.6-x86_64-linux.sh
+         chmod +x racket-8.14-x86_64-linux-cs.sh
          ```
          sicher, dass der Installer ausführbar ist und führen Sie diesen dann mit
          ```
-         sudo ./racket-8.6-x86_64-linux.sh
+         sudo ./racket-8.14-x86_64-linux-cs.sh
          ```
          aus.
          4. Beantworten Sie die Fragen, die Ihnen im Terminal gestellt werden. Standardmäßig können diese mit **"no"**, **"1"** und **"/usr/local"** beantworten. 
