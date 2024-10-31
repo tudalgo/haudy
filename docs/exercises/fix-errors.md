@@ -294,11 +294,11 @@
     Der obigen Code erzeuget dabei folgende Fehlermeldung:
     ````
     Exception in thread "main" java.lang.StackOverflowError
-	at B1.doCalculation(B1.java:4)
-	at B1.doCalculation(B1.java:4)
-	at B1.doCalculation(B1.java:4)
-	at B1.doCalculation(B1.java:4)
-	at B1.doCalculation(B1.java:4)
+    at B1.doCalculation(B1.java:4)
+    at B1.doCalculation(B1.java:4)
+    at B1.doCalculation(B1.java:4)
+    at B1.doCalculation(B1.java:4)
+    at B1.doCalculation(B1.java:4)
     ...
     ````
     Falls man eigentlich die Methode der Basisklasse aufrufen wollte, kann man einfach "super." einfügen um den Fehler zu lösen.
@@ -342,7 +342,7 @@
     erhält man solch eine Fehlermeldung:
     ````
     Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
-	at Main.main(Main.java:9)
+    at Main.main(Main.java:9)
     ````
     Hier ist, wie in der Fehlermeldung beschrieben, das Problem, dass versucht wird auf einen Arrayindex zuzugreifen, welcher außerhalb der Bounds des Arrays liegt.
 
