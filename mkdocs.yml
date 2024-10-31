@@ -6,7 +6,15 @@ repo_url: https://github.com/tudalgo/haudy
 theme:
   name: material
   favicon: assets/favicon.png
+  logo: assets/favicon.png
+  language: de
   palette:
+    # Automatic palette toggle
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -25,10 +33,18 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
   features:
-    - navigation.instant
+    - content.action.edit
+    - navigation.expand
+    # - navigation.instant
+    # - navigation.indexes
+    # - navigation.instant.progress
+    - navigation.path
+    - navigation.tracking
+    - navigation.top
     - navigation.sections
     - content.code.copy
     - content.code.select
+  custom_dir: docs/overrides
 
 nav:
   - Vorbereitung:
@@ -61,8 +77,44 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
-  - toc:
-      title: Auf dieser Seite
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - glightbox:
+      background: white
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: de
+          default: true
+          name: Deutsch
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav:
+            - Preparation:
+              - "Terminal Usage": "preparation/terminal.md"
+              - Package Manager: preparation/packagemanager.md
+              - Installing Java: preparation/installation-java.md
+              - Installing IntelliJ: preparation/installation-intellij.md
+              - Installing DrRacket: preparation/installation-racket.md
+              - Installing Git: preparation/installation-git.md
+              - Installationen requirements for the Recap: preparation/installation-recap.md
+              - Adding the Matrikelnummer: preparation/matriculation-number.md
+            - Assignments:
+              - Download and import: exercises/download-import.md
+              - Editing: exercises/edit.md
+              - Fixing common errors: exercises/fix-errors.md
+              - Export and Upload: exercises/export-upload.md
+              - Unsupported IDEs: exercises/download-import-unsupported.md
+              - Documentation of Java-Sourcecode: exercises/documentation.md
+              - Complaints: exercises/complaints.md
+            - Consultation hours:
+              - Before attending a consultation ...: support/good-bad-questions.md
 
 extra_css:
   - stylesheets/smooth-scroll.css
+  - stylesheets/dynamic-lightbox-theme.css
