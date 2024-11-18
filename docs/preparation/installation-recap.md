@@ -1,7 +1,18 @@
 # Installation für das Recap
-Stellen Sie sicher, dass Sie bereits [Java] und [Racket] installiert haben.
 
-## Installieren von Anaconda
+Die Übungen im Recap werden in Jupyter Notebooks durchgeführt. Um die Notebooks ausführen zu können, benötigen Sie eine Python Umgebung mit einem **Java** / **Racket** Kernel.
+
+## Methode 1: Google Colab (empfohlen)
+
+Wir empfehlen die Nutzung von Google Colab, da Sie dort keine lokale Installation durchführen müssen. Sie können die Notebooks direkt in Ihrem Browser ausführen, insofern Sie über einen Google Account verfügen. Die entsprechenden Links zu den Notebooks finden Sie im Moodle.
+
+Um Google Colab mit **Java** oder **Racket** benutzen zu können, müssen Sie dann immer die erste Zelle ausführen. Anschließend sollten Sie die Seite neu laden (F5), damit die Änderungen übernommen werden. Wenn Sie Ihre Änderungen speichern möchten, können Sie die Notebooks in Google Drive speichern. Dazu müssen Sie die Notebooks in Google Colab öffnen und dann auf **"File"** -> **"Save a copy in Drive"** drücken. Dann können Sie die Notebooks in Ihrem Google Drive bearbeiten und später wieder öffnen.
+
+## Methode 2: Manuelle / Lokale Installation
+
+Wenn Sie über keinen Google Account verfügen oder die Installation über Google Colab nicht funktioniert, können Sie die Installation auch lokal durchführen. Dazu müssen Sie [Anaconda], [Java] und [Racket] installieren. Mit dieser Installation können Sie dann unsere Notebooks aus dem Moodle herunterladen und lokal ausführen.
+
+### Installieren von Anaconda
 
 === "Windows"
     === "Scoop"
@@ -69,7 +80,8 @@ Stellen Sie sicher, dass Sie bereits [Java] und [Racket] installiert haben.
     conda list
     ```
     
-## Installation Java Kernel
+### Installation Java Kernel
+
 === "Windows"
     === "Manuell"
         1. Laden Sie sich den Kernel [iJava] herunter, indem Sie unten auf das Zip-Archiv **"ijava-1.3.0.zip"** drücken.
@@ -112,7 +124,8 @@ Stellen Sie sicher, dass Sie bereits [Java] und [Racket] installiert haben.
         python install.py --user
         ```
 
-## Installation Racket Kernel
+### Installation Racket Kernel
+
 === "Windows"
     === "Manuell"
         1. Geben Sie in die Windowssuche (Win + S) **"Anaconda Prompt"** ein und öffnen Sie das Fenster.
