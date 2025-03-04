@@ -12,10 +12,10 @@ Daher wird von Ihnen erwartet, dass Sie sich vorab mit folgenden Punkten auseina
 ### Fragen zu Lösungen von Hausübungen
 
 Wir erwarten von Ihnen,
-dass Sie Hausübungem selbstständig bearbeiten und damit auch selbstständig versuchen,
+dass Sie Hausübungen selbstständig bearbeiten und damit auch selbstständig versuchen,
 Fehler zu beheben.
 
-Sie sollten erst einen Tutor Fragen,
+Sie sollten erst einen Tutor fragen,
 wenn Sie wirklich nicht weiterkommen.
 Hierbei erwarten wir von Ihnen Folgendes:
 

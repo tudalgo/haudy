@@ -119,7 +119,7 @@
          - Use Java 20 as Gradle JVM: Open Gradle settings 
          - Open Gradle wrapper settings, change `distributionUrl` property to use compatible Gradle version and reload the project
         ```
-        Offiziell wird Java 21 noch nicht von Gradle unterstützt. Für die Bearbeitung der Hausübungen ist dies allerdings eigentlich kein Problem. Falls Sie die Fehlermeldung in der Konsole angezigt bekommen, liegt dies meist eigentlich ein anderes Problem vor. Überprüfen Sie, ob links neben der Fehlermeldung in einem der anderen Logs eine andere Fehlermeldung angezeigt wird und beheben sie diese. Meist liegt es an kompilierfehler oder an fehlenden Daten in der build.gradle.kts Datei. Falls Sie die Nachricht beim Öffnen der Hausübung als Hinweis erhalten, können Sie diese zunächst ignorieren. Als letzte Möglichkeit können Sie auch versuchen, die Java Version in IntelliJ auf Java 21 zu ändern. Siehe dafür [Korrekte Java Version in IntelliJ einstellen].
+        Offiziell wird Java 21 noch nicht von Gradle unterstützt. Für die Bearbeitung der Hausübungen ist dies allerdings eigentlich kein Problem. Falls Sie die Fehlermeldung in der Konsole angezeigt bekommen, liegt dies meist eigentlich ein anderes Problem vor. Überprüfen Sie, ob links neben der Fehlermeldung in einem der anderen Logs eine andere Fehlermeldung angezeigt wird und beheben sie diese. Meist liegt es an Kompilierfehlern oder an fehlenden Daten in der build.gradle.kts Datei. Falls Sie die Nachricht beim Öffnen der Hausübung als Hinweis erhalten, können Sie diese zunächst ignorieren. Als letzte Möglichkeit können Sie auch versuchen, die Java Version in IntelliJ auf Java 21 zu ändern. Siehe dafür [Korrekte Java Version in IntelliJ einstellen].
 
     12. !!! error ""
         ```
@@ -133,7 +133,7 @@
         ```
         Caused by: java.lang.ClassNotFoundException: hxx.Main
         ```
-        Dieser Fehler entsteht meistens, wenn die Vorlage nicht korrket importiert wurde, oder die Vorlage in einem Pfad gespeichert wurde, welcher Leerzeichen oder Sonderzeichen enthält. Stellen Sie sicher, dass die Vorlage korrekt importiert wurde (am besten durch die Verwendung von Git) und verschieben Sie die Vorlage ggf. an einen Dateipfad, welcher keine Leerzeichen oder Sonderzeichen enthält. 
+        Dieser Fehler entsteht meistens, wenn die Vorlage nicht korrekt importiert wurde, oder die Vorlage in einem Pfad gespeichert wurde, welcher Leerzeichen oder Sonderzeichen enthält. Stellen Sie sicher, dass die Vorlage korrekt importiert wurde (am besten durch die Verwendung von Git) und verschieben Sie die Vorlage ggf. an einen Dateipfad, welcher keine Leerzeichen oder Sonderzeichen enthält. 
 
     12. !!! error ""
         ```
@@ -290,8 +290,8 @@
         }
     }
     ````
-    Wie erkennt man solch einen Fehler? Endlose Rekursion erkennt man gut im Stacktrace: bei jedem Methodenaufruf wird ein neuer Frame auf den Stack gelegt, bis der Stack  vollläuft und ein StackOverflowError geworfen wird. Falls also die letzen Methodenaufrufe auf dem Stack alle identisch sind und ein StackOverflowError angezeigt wird, hat man vermutlich eine endlose Rekursion im Code, d.h. die Methode ruft sich immer wieder selber auf.
-    Der obigen Code erzeuget dabei folgende Fehlermeldung:
+    Wie erkennt man solch einen Fehler? Endlose Rekursion erkennt man gut im Stacktrace: bei jedem Methodenaufruf wird ein neuer Frame auf den Stack gelegt, bis der Stack  vollläuft und ein StackOverflowError geworfen wird. Falls also die letzten Methodenaufrufe auf dem Stack alle identisch sind und ein StackOverflowError angezeigt wird, hat man vermutlich eine endlose Rekursion im Code, d.h. die Methode ruft sich immer wieder selber auf.
+    Der obigen Code erzeugt dabei folgende Fehlermeldung:
     ````
     Exception in thread "main" java.lang.StackOverflowError
     at B1.doCalculation(B1.java:4)
@@ -321,7 +321,7 @@
     }
     ````
 
-    Java Fehlermedung:
+    Java Fehlermeldung:
     ````
     java: C is not abstract and does not override abstract method bar() in I
     ````
@@ -515,7 +515,7 @@
 
     * Wird dieser Teil meines Programms ausgeführt?
     * Was ist diesem Attribut an dieser Stelle meines Programms zugewiesen?
-    * Ist diese Bedingung an dieser Stelle meines Proramms erfüllt?
+    * Ist diese Bedingung an dieser Stelle meines Programms erfüllt?
     * Befindet sich mein Programm in einer Endlosschleife/-rekursion?
 
     #### Beispiel
