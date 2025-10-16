@@ -172,7 +172,7 @@
      */
     public enum Direction { 
 
-        // Hinweis: Die Dokumentation der einzelnen Enum-Konstanten ist nicht verpfichtend, wird aber empfohlen.
+        // Hinweis: Die Dokumentation der einzelnen Enum-Konstanten ist nicht verpflichtend, wird aber empfohlen.
 
         /**
          * The direction up. This direction corresponds to the vector (0, 1).
