@@ -36,7 +36,7 @@ Diese erhalten sie entweder, indem sie das zugehörige [Git-Repository] klonen, 
     3. Gehen Sie nun in IntelliJ links oben im **"File"** Reiter auf **"open..."**
         * Wenn Sie IntelliJ das erste Mal öffnen, drücken Sie stattdessen rechts oben auf **"open"**
     4. Wählen Sie nun den Pfad zu dem Ordner, in dem die Vorlage gespeichert ist, aus und drücken Sie auf **"OK"**.
-       * Achten Sie darauf, dass Sie den richtigen Ordner importieren. Der Ordner sollte nach der Hausübung benannt sein (z. B. **"FOP-2526-HXX-Student-master"**) und direkt die     build.gradle.kts Datei enthalten sein. Wählen Sie beim Importieren **nicht** einen identisch benannten Oberordner aus.
+       * Achten Sie darauf, dass Sie den richtigen Ordner importieren. Der Ordner sollte nach der Hausübung benannt sein (z. B. **"FOP-2526-HXX-Student-main"**) und direkt die build.gradle.kts Datei enthalten sein. Wählen Sie beim Importieren **nicht** einen identisch benannten Oberordner aus.
     5. Falls Sie bereits ein Projekt geöffnet hatten, drücken Sie auf **"This Window"**.
     6. Drücken Sie zum Schluss auf **"Trust Project"**, wodurch sich die Vorlage öffnet.
     7. Nun können Sie die Hausübung bearbeiten.
@@ -60,9 +60,9 @@ Diese erhalten sie entweder, indem sie das zugehörige [Git-Repository] klonen, 
     2. Nun können Sie die Änderungen zu Ihrer Version hinzuzufügen, indem Sie links oben in IntelliJ auf die drei Punkte gehen und dann im Git Reiter auf **"Pull..."** drücken. Drücken Sie im Fenster, welches sich nun öffnet, erneut auf **"Pull"**.
        * Alternativer Befehl:
           ```
-          git pull origin master
+          git pull origin main
           ```
-       * Falls sich die Änderungen nicht im master branch befinden, müssen sie stattdessen die Änderungen in Ihren master branch mergen. Drücken Sie dafür im Git Reiter oben links auf **"Fetch"** und danach auf **"Merge"**. Geben Sie in dem Fenster, welches sich nun öffnet, rechts den Branch an, in welchem sich die Änderungen befinden. Drücken Sie dafür rechts auf den Pfeil nach unten oder geben Sie manuell den Namen ein. Drücken Sie zum Schluss auf **"Merge"**.
+       * Falls sich die Änderungen nicht im main branch befinden, müssen sie stattdessen die Änderungen in Ihren main branch mergen. Drücken Sie dafür im Git Reiter oben links auf **"Fetch"** und danach auf **"Merge"**. Geben Sie in dem Fenster, welches sich nun öffnet, rechts den Branch an, in welchem sich die Änderungen befinden. Drücken Sie dafür rechts auf den Pfeil nach unten oder geben Sie manuell den Namen ein. Drücken Sie zum Schluss auf **"Merge"**.
        * Falls Sie sich unsicher sind, welchen branch Sie auswählen sollen, finden Sie unten links unten in der Git Ansicht eine Übersicht aller branches und mit einem Doppelklick auf diese eine Liste aller commits.
        * Alternative Befehle:
           ```
