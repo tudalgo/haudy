@@ -50,7 +50,7 @@
 Sie können wie folgt sicherstellen, dass Sie die Abgabedatei korrekt erstellt haben.
 
 1. Nach dem Ausführen der Task **"build/mainBuildSubmission"** sollte die Abgabedatei sich im Ordner **"build/libs"** befinden und nach dem Schema **"hXX-TU-ID-firstName-lastName-submission.jar"** benannt sein.
-2. Entpacken Sie die .jar Datei entweder mit einem Entpackungsprogramm wie z.B. 7Zip oder in einem [Terminal] mit dem Befehl **"jar -xf <Dateiname\>"**.
+2. Entpacken Sie die .jar Datei entweder mit einem Entpackungsprogramm wie z.B. 7Zip oder in einem [Terminal] mit dem Befehl **"jar -xf <Dateiname\>"**. Sie können auf diese Weise nicht nur die durch mainBuildSubmission erstellte Abgaben öffnen bzw. entpacken, sondern beliebige jar-Dateien, auch die die Sie bereits in Moodle hochgeladen haben.
 3. Nach dem Entpacken sollte nun im Besonderen folgendes vorhanden sein:
     * eine Datei **"Submission-info.json"**
     * ein Ordner **hXX**, welcher der Package Struktur des Projektes entspricht und die Quelldateien (.java) enthält.
