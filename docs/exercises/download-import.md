@@ -78,4 +78,4 @@ Diese erhalten sie entweder, indem sie das zugehörige [Git-Repository] klonen, 
 
 [Moodle]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1777&sectionid=24116
 [Git-Repository]: https://github.com/FOP-2526
-[Git lokal installieren]: https://wiki.tudalgo.org/preparation/installation-git/
+[Git lokal installieren]: /preparation/installation-git/

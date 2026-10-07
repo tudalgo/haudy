@@ -544,14 +544,14 @@
 
     Beachten Sie die Seite [Bevor Sie eine Sprechstunde besuchen].
 
-[Korrekte Java Version in IntelliJ Einstellen]: https://wiki.tudalgo.org/exercises/fix-errors/#korrekte-java-version-in-intellij-einstellen
-[Anleitung zum Installieren von Java]: https://wiki.tudalgo.org/preparation/installation-java/
-[Anleitung zum Exportieren]: https://wiki.tudalgo.org/exercises/export-upload/#exportieren
-[Java mehr Speicher zuzuweisen]: https://wiki.tudalgo.org/exercises/fix-errors/#java-mehr-speicher-zuweisen
+[Korrekte Java Version in IntelliJ Einstellen]: /exercises/fix-errors/#korrekte-java-version-in-intellij-einstellen
+[Anleitung zum Installieren von Java]: /preparation/installation-java/
+[Anleitung zum Exportieren]: /exercises/export-upload/#exportieren
+[Java mehr Speicher zuzuweisen]: /exercises/fix-errors/#java-mehr-speicher-zuweisen
 [Aktualisieren der Vorlage]: /exercises/download-import/#aktualisieren-der-vorlage
 [Typische Programmierfehler]: /exercises/fix-errors/#typische-programmierfehler
 [Bevor Sie eine Sprechstunde besuchen]: /support/good-bad-questions
 [Debugging]: /exercises/fix-errors/#debugging
-[List]: https://docs.oracle.com/javase/8/docs/api/java/util/List.html
+[List]: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html
 [Moodle Forum für technische Fragen]: https://moodle.informatik.tu-darmstadt.de/mod/forum/view.php?id=68769
 [Discord Server]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632&sectionid=21309#sectionid-21230-title

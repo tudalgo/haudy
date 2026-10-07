@@ -2,7 +2,7 @@
 
 !!! warning "Warnung"
     * Sie können entweder die Community Edition oder die Ultimate Edition von IntelliJ zum Bearbeiten der Hausübungen verwenden.
-    Die Ultimate Edition bittet Ihnen einige weiter Features und Sie erhalten sie als Student kostenlos. Dafür müssen Sie sich [hier] mit Ihrer studentischen E-Mail registrieren.
+    Die Ultimate Edition bietet Ihnen weitere Features und Sie erhalten sie als Student kostenlos. Dafür müssen Sie sich [hier] mit Ihrer studentischen E-Mail registrieren.
     Weitere Information zur studentischen E-Mail finden Sie auf der Seite des [HRZ].
 
 === "Windows"
@@ -52,7 +52,7 @@
     === "Arch Based Linux"
         === "AUR-Helper"
 
-            Falls Sie einen [AUR-Helper] installiert haben, können Sie das Paket [intellij-idea-ce], bzw. [intellij-idea-ultimate-edition], installieren.
+            Falls Sie einen [AUR-Helper] installiert haben, können Sie das Paket [intellij-idea-ultimate-edition] installieren.
 
             !!! info "Hinweis"
                 Bei größeren Updates von IntelliJ kann es vorkommen, dass ihre Einstellungen beim AUR Paket nicht übernommen werden. Wir empfehlen daher eine Installation über die Toolbox.
@@ -63,18 +63,16 @@
                 ```
                 pacman -S base-devel git --needed
                 ```
-                * Für die Community Edition klonen Sie:
-                    ```
-                    git clone https://aur.archlinux.org/intellij-idea-ce.git
-                    ```
-                * Für die Ultimate Edition klonen Sie:
-                    ```
-                    git clone https://aur.archlinux.org/intellij-idea-ultimate-edition.git
-                    ```
-            2. Wechseln Sie in das jeweilige Verzeichnis und installieren Sie das Paket.
+            2. Klonen Sie das Repo für die Ultimate Edition:
                 ```
-                cd intellij-idea-* && makepgk -ifs
+                git clone https://aur.archlinux.org/intellij-idea-ultimate-edition.git
                 ```
+            3. Wechseln Sie in das geklonte Verzeichnis und installieren Sie das Paket.
+                ```
+                cd intellij-idea-ultimate-edition && makepkg -ifs
+                ```
+
+            Alternativ können Sie die Community Edition über das Paket `intellij-idea-community-edition` installieren.
 
 * Nun können Sie die Hausübung mit IntelliJ bearbeiten. Befolgen Sie dafür die Schritte der Anleitungen im Abschnitt [Herunterladen und exportieren].
     * Wenn Sie IntelliJ das erste Mal starten, werden Sie möglicherweise noch gefragt, ob Sie Einstellungen importieren möchten. Dies benötigen Sie nicht.
@@ -84,9 +82,8 @@
 [HRZ]: https://www.hrz.tu-darmstadt.de/services/it_services/linux_mail/index.de.jsp
 [Toolbox]: https://www.jetbrains.com/de-de/toolbox-app/
 [AUR-Helper]: https://wiki.archlinux.org/title/AUR_helper
-[intellij-idea-ce]: https://aur.archlinux.org/packages/intellij-idea-ce
 [intellij-idea-ultimate-edition]: https://aur.archlinux.org/packages/intellij-idea-ultimate-edition
-[Herunterladen und Exportieren]: https://wiki.tudalgo.org/exercises/download-import/
-[Terminal]: https://wiki.tudalgo.org/preparation/terminal/
-[Homebrew]: https://wiki.tudalgo.org/preparation/packagemanager/
-[Scoop]: https://wiki.tudalgo.org/preparation/packagemanager/
+[Herunterladen und Exportieren]: /exercises/download-import/
+[Terminal]: /preparation/terminal/
+[Homebrew]: /preparation/packagemanager/
+[Scoop]: /preparation/packagemanager/

@@ -19,14 +19,6 @@
     * Falls ihr Name Leer- oder Sonderzeichen enthält, können Sie diese unverändert drin lassen.
     * Verändern Sie bis auf diese drei Zeilen nichts Weiteres an der Datei.
     * Beachten Sie, dass die Anführungszeichen notwendig sind.
-    * Falls Sie noch eine alte Version verwenden, sehen die Zeilen stattdessen wie folgt aus:
-    ``` java
-    studentID.set("ab12cdef")
-    firstName.set("Max")
-    lastName.set("Mustermann")
-    ``` 
-    * Bei der alten Version müssen Sie die drei Zeilen noch einkommentieren, d.h. die **//** am Anfang der Zeile entfernen. Anschließend einmal auf die Blauen Pfeile oben in der Gradle Übersicht klicken, um die Konfiguration neu zu laden.
-
 
 2. Öffnen Sie am rechten oberen Rand die Gradle Übersicht (das Elefantensymbol).
 
@@ -57,7 +49,7 @@ Sie können wie folgt sicherstellen, dass Sie die Abgabedatei korrekt erstellt h
         * Falls nur .class Dateien vorhanden sind, haben Sie vermutlich die Task **"build/build"** und nicht **"build/mainBuildSubmission"** ausgeführt. Abgaben, die auf diese Art erstellt wurden, werden nicht bewertet.
 
 [Moodle]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632&sectionid=21307
-[Gradle Task]: https://wiki.tudalgo.org/exercises/edit/#gradle-tasks
-[hier]: https://wiki.tudalgo.org/exercises/fix-errors/ 
-[Terminal]: https://wiki.tudalgo.org/preparation/terminal/
-[Abgabe Verifizieren]: https://wiki.tudalgo.org/exercises/export-upload/#abgabe-verifizieren
+[Gradle Task]: /exercises/edit/#gradle-tasks
+[hier]: /exercises/fix-errors/
+[Terminal]: /preparation/terminal/
+[Abgabe Verifizieren]: /exercises/export-upload/#abgabe-verifizieren

@@ -35,15 +35,15 @@
          1. Laden Sie [hier] DrRacket herunter. Achten Sie darauf, dass Linux als Betriebssystem ausgewählt ist.
            * Alternativ können Sie es auch mit dem folgenden Befehl herunterladen:
            ```
-           wget https://mirror.racket-lang.org/installers/8.14/racket-8.14-x86_64-linux-cs.sh
+           wget https://mirror.racket-lang.org/installers/9.3/racket-9.3-x86_64-linux-buster-cs.sh
            ```
          2. Stellen Sie mit
          ```
-         chmod +x racket-8.14-x86_64-linux-cs.sh
+         chmod +x racket-9.3-x86_64-linux-buster-cs.sh
          ```
          sicher, dass der Installer ausführbar ist und führen Sie diesen dann mit
          ```
-         sudo ./racket-8.14-x86_64-linux-cs.sh
+         sudo ./racket-9.3-x86_64-linux-buster-cs.sh
          ```
          aus.
          4. Beantworten Sie die Fragen, die Ihnen im Terminal gestellt werden. Standardmäßig können diese mit **"no"**, **"1"** und **"/usr/local"** beantworten. 
@@ -90,7 +90,7 @@ angezeigt wird, überprüfen Sie wie folgt, ob die Umgebungsvariablen korrekt ge
     5. Schließen Sie mit **"OK"** alle Fenster und öffnen Sie ein neues Terminal. Es sollte nun die korrekte Racket Version angezeigt werden.
 
 [hier]: https://download.racket-lang.org/
-[Terminal]: https://wiki.tudalgo.org/preparation/terminal/
+[Terminal]: /preparation/terminal/
 [Überprüfung der Installation]: #installation-uberprufen
-[Homebrew]: https://wiki.tudalgo.org/preparation/packagemanager/
-[Scoop]: https://wiki.tudalgo.org/preparation/packagemanager/
+[Homebrew]: /preparation/packagemanager/
+[Scoop]: /preparation/packagemanager/
