@@ -22,7 +22,7 @@
 
 2. Öffnen Sie am rechten oberen Rand die Gradle Übersicht (das Elefantensymbol).
 
-3. Unter **"FOP-2526-HXX-Student" -> "Task" -> "build"** finden Sie die Gradle Task **"mainBuildSubmission"**. Führen Sie diese mit einem Doppelklick aus.
+3. Unter **"FOP-2627-HXX-Student" -> "Task" -> "build"** finden Sie die Gradle Task **"mainBuildSubmission"**. Führen Sie diese mit einem Doppelklick aus.
     * Wenn unten in der Konsole **"BUILD SUCCESSFUL"** steht, war das Erstellen der Abgabedatei erfolgreich.
     * Achten Sie darauf, dass Sie nicht die Task **"build"** ausführen, da diese nicht die Abgabedatei erstellt. Abgaben, die mit dieser Task erstellt wurden, können nicht bewertet werden.
 
@@ -32,7 +32,7 @@
     * Um den Inhalt der Abgabedatei zu überprüfen, befolgen Sie die Schritte unter [Abgabe Verifizieren].
 
 ## Hochladen
-* Laden Sie nun die zuvor erstellte Datei in [Moodle] bei der entsprechenden Abgabe hoch.
+* Laden Sie nun die zuvor erstellte Datei in Moodle bei der entsprechenden Abgabe hoch.
     * Sie finden das Abgabemodul auf der selben Seite, wie auch das Übungsblatt, unter dem Namen **"Abgabe zu Übungsblatt X"**
     * Sie können bis zum Abgabeende beliebig oft Ihre Abgabe ändern. Wir empfehlen Ihnen daher regelmäßig Ihren Zwischenstand hochzuladen, damit Sie nicht leer dastehen, wenn Sie die Abgabefrist verpassen.
     * Alle Abgaben, die auf Moodle hochgeladen werden konnten, werden bewertet. Wenn keine Datei hochgeladen werden kann, weil die Abgabefrist überschritten wurde, kann die Aufgabe nicht bewertet werden.
@@ -48,7 +48,6 @@ Sie können wie folgt sicherstellen, dass Sie die Abgabedatei korrekt erstellt h
     * ein Ordner **hXX**, welcher der Package Struktur des Projektes entspricht und die Quelldateien (.java) enthält.
         * Falls nur .class Dateien vorhanden sind, haben Sie vermutlich die Task **"build/build"** und nicht **"build/mainBuildSubmission"** ausgeführt. Abgaben, die auf diese Art erstellt wurden, werden nicht bewertet.
 
-[Moodle]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632&sectionid=21307
 [Gradle Task]: /exercises/edit/#gradle-tasks
 [hier]: /exercises/fix-errors/
 [Terminal]: /preparation/terminal/

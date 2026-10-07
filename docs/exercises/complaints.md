@@ -55,5 +55,5 @@ Beanstandungen dieser Art werden höchstwahrscheinlich ignoriert:
     ```
     **Erklärung**: Beastandungen dienen zur Korrektur einer fehlerhaften oder unfairen Bewertung. Eine Erklärung für Aufgaben oder für Ihre Fehler können Sie durch diverse andere Angebote erhalten, wie zum Beispiel: Intensivbetreuung, Lösung der Hausübung, Fragen auf [Discord]/[Moodle], Sprechstunden, ...
 
-[Discord]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632&sectionid=21309#sectionid-21230-title
-[Moodle]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632
+[Discord]: https://moodle.tu-darmstadt.de/course/section.php?id=639004
+[Moodle]: https://moodle.tu-darmstadt.de/course/view.php?id=48693

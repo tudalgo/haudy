@@ -2,7 +2,7 @@
 
 === "Technische Fehler"
 
-    * Stellen Sie zunächst sicher, dass Sie den richtigen Ordner importiert haben. Der oberste Ordner sollte nach der Hausübung benannt sein (z. B. **"FOP-2526-HXX-Student-main"**) und direkt die build.gradle.kts Datei enthalten sein. Wählen Sie beim Importieren **nicht** einen identisch benannten Oberordner aus.
+    * Stellen Sie zunächst sicher, dass Sie den richtigen Ordner importiert haben. Der oberste Ordner sollte nach der Hausübung benannt sein (z. B. **"FOP-2627-HXX-Student-main"**) und direkt die build.gradle.kts Datei enthalten sein. Wählen Sie beim Importieren **nicht** einen identisch benannten Oberordner aus.
     * Beachten Sie, dass es mit Gradle zu Problemen kommen kann, wenn das Projekt auf einer externen Festplatte gespeichert wurde.
     * Anbei finden Sie ein paar mögliche Fehler, welche Ihnen in der Konsole, die sich beim Ausführen der des Programmes oder einer Gradle Task automatisch öffnet, angezeigt werden. Damit Ihnen die vollständigen Fehlermeldungen angezeigt werden, wählen Sie links von der Konsole die zweite Option von oben aus.
 
@@ -19,7 +19,7 @@
 
     2. !!! error ""
         ```
-        A problem occurred configuring root project 'FOP-2526-H00-Student'.
+        A problem occurred configuring root project 'FOP-2627-H00-Student'.
         Could not resolve all files for configuration ':classpath'.
         Could not resolve org.tudalgo:algomate:0.1.0-SNAPSHOT.
         ```
@@ -553,5 +553,5 @@
 [Bevor Sie eine Sprechstunde besuchen]: /support/good-bad-questions
 [Debugging]: /exercises/fix-errors/#debugging
 [List]: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html
-[Moodle Forum für technische Fragen]: https://moodle.informatik.tu-darmstadt.de/mod/forum/view.php?id=68769
-[Discord Server]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632&sectionid=21309#sectionid-21230-title
+[Moodle Forum für technische Fragen]: https://moodle.tu-darmstadt.de/mod/forum/view.php?id=1829085
+[Discord Server]: https://moodle.tu-darmstadt.de/course/section.php?id=639004

@@ -47,7 +47,7 @@
 * Sie können nun mit dem Befehl **"git --version"** in einem [Terminal] überprüfen, ob Git erfolgreich installiert wurde.
     
 
-[GitHub]: https://github.com/FOP-2526
+[GitHub]: https://github.com/FOP-2627
 [Git]: https://git-scm.com/download
 [Terminal]: /preparation/terminal/
 [Homebrew]: /preparation/packagemanager/

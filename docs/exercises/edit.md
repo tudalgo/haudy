@@ -83,14 +83,14 @@
 
 ## Musterlösung und Private Tests
 
-* Nach Ende der Abgabefrist wird auf [Moodle] bei der entsprechenden Übung ein Link zur Musterlösung veröffentlicht.
+* Nach Ende der Abgabefrist wird auf Moodle bei der entsprechenden Übung ein Link zur Musterlösung veröffentlicht.
 * In der Musterlösung sind in dem Ordner **graderPrivate** die private Tests enthalten, welche zur automatischen Bewertung ihrer Abgabe verwendet werden. 
 * Wenn Sie die Musterlösung herunterladen und mit Ihrer eigenen Implementation ersetzten, können Sie die private Tests auf die selbe Art wie die [Public Tests] ausführen, mit dem Unterschied, dass Sie die **graderPrivateRun** Task anstatt der **graderPublicRun** Task verwenden müssen.
 * Alternativ können Sie zum Ausführen auch einen Rechtsklick auf den **graderPrivate** Ordner machen und auf **"Run 'All Tests'"** gehen um die Tests auszuführen. Diese Methode erlaubt im besonderen das Verwenden des Debuggers, funktioniert aber nicht bei allen Tests. 
 
 [Gradle Task]: /exercises/edit/#gradle-tasks
 [hier]: /exercises/download-import/#aktualisieren-der-vorlage
-[Moodle]: https://moodle.informatik.tu-darmstadt.de/mod/page/view.php?id=68766
+[Moodle]: https://moodle.tu-darmstadt.de/course/section.php?id=639000
 [Java mehr Speicher zuzuweisen]: /exercises/fix-errors/#java-mehr-speicher-zuweisen
 [Exportieren]: /exercises/export-upload/#exportieren
 [Public Tests]: /exercises/edit/#public-tests

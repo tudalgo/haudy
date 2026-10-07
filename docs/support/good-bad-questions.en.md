@@ -6,7 +6,7 @@ Therefore, you are expected to have dealt with the following points in advance:
 
 * [Lecture content] - indicated for homework on each sheet
 * this student guide
-* the [Moodle forum] - for homework exercises in particular also FAQ
+* the Moodle forum - for homework exercises in particular also FAQ
 * the documentation of the materials used
 
 ### Questions about solutions to homework exercises
@@ -46,5 +46,5 @@ The following questions have already been asked in a similar form during our con
 * *I implemented the exercise correctly, but the public tests fail. They must be wrong!*
 * *I get this error message. Why?* (Without trying to understand it.)
 * *My code does not do what it is supposed to do :(*
-[Moodle forum]: https://moodle.informatik.tu-darmstadt.de/course/view.php?id=1632&sectionid=21307
-[Lecture content]: https://moodle.informatik.tu-darmstadt.de/mod/folder/view.php?id=68719
+
+[Lecture content]: https://moodle.tu-darmstadt.de/course/section.php?id=608885
