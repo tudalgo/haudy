@@ -54,7 +54,6 @@ nav:
     - Installieren von IntelliJ: preparation/installation-intellij.md
     - Installieren von DrRacket: preparation/installation-racket.md
     - Installieren von Git: preparation/installation-git.md
-    - Hinzufügen der Matrikelnummer: preparation/matriculation-number.md
   - Hausübungen:
     - Herunterladen und importieren: exercises/download-import.md
     - Bearbeiten von Hausübungen: exercises/edit.md
@@ -101,7 +100,6 @@ plugins:
               - Installing IntelliJ: preparation/installation-intellij.md
               - Installing DrRacket: preparation/installation-racket.md
               - Installing Git: preparation/installation-git.md
-              - Adding the Matrikelnummer: preparation/matriculation-number.md
             - Assignments:
               - Download and import: exercises/download-import.md
               - Editing: exercises/edit.md
