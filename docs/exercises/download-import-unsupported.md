@@ -54,7 +54,28 @@
         * Sie können sich die Übersicht über die Gradle Tasks entweder an der rechten Seite des Bildschirms über das Gradle Symbol, oder über **"Window" -> "Show View" -> "Other..." -> "Gradle" -> "Gradle Tasks" -> "Open"** anzeigen lassen.
         Die einzelnen Ordner können Sie über durch einen Doppelklick aufklappen.
 
-=== "Nvim, Emacs"
+=== "vim, neovim"
+
+    * LSP
+    
+        * Nvim: Um Ihre Projekte zu debuggen und IDE-Funktionalitäten wie "Go-to-Definition" oder "Auto-completion" zu nutzen, sollten Sie ein LSP-Setup einrichten. bspw. umfasst:
+            * [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+            * [nvim-dap](https://codeberg.org/mfussenegger/nvim-dap)
+            * [nvim-jdtls](https://codeberg.org/mfussenegger/nvim-jdtls)
+            eine Lösung
+            
+    * Snippets
+    
+        * Das macht das Schreiben des Codes einfacher und schneller.
+            * [ultisnips](https://github.com/SirVer/ultisnips)
+            * [vim-snippets](https://github.com/honza/vim-snippets)
+            
+    * Terminal
+    
+        * Neovim verfügt bereits über ein Terminal-Fenster. Ein Mapping kann jedoch die Nutzung deutlich vereinfachen:
+        `nnoremap <silent> <leader>ot :split<CR><C-j>:terminal<CR>a`
+        
+=== "Emacs"
      * Sie wissen, was Sie tun.
 
 === "Andere"
