@@ -1,9 +1,9 @@
 # Installieren von Java
 
 !!! warning "Warnung"
-    Zum Bearbeiten der Hausübungen benötigen Sie Java 21 oder höher. Beachten Sie, dass Ihre ggf. vorhandene Java 11 Installation dafür nicht ausreicht.
+    Zum Bearbeiten der Hausübungen benötigen Sie Java 21. Java Versionen > 21 können bei den Public Tests Probleme bereiten, daher unterstützen wir nur Java 21. Beachten Sie, dass Ihre ggf. vorhandene Java Installation dafür nicht ausreicht.
 
-* Überprüfen Sie zunächst, ob Sie bereits Java 21 oder höher installiert haben. Siehe dafür [Überprüfung der Installation]. Falls Sie Java 21 oder höher installiert haben, können Sie mit dem nächsten Abschnitt [Installation von IntelliJ] fortfahren.
+* Überprüfen Sie zunächst, ob Sie bereits Java 21 installiert haben. Siehe dafür [Überprüfung der Installation]. Falls Sie Java 21 installiert haben, können Sie mit dem nächsten Abschnitt [Installation von IntelliJ] fortfahren.
 
 === "Windows"
 
@@ -16,23 +16,24 @@
             ```
             und
             ```
-            scoop install java/openjdk
+            scoop install java/openjdk21
             ```
 
     === "Manuell"
 
         1. Öffnen Sie die [Adoptium Website].
-        2. Drücken Sie auf **"Latest LTS Release"**. Der Download sollte automatisch starten.
-        3. Öffnen Sie den soeben heruntergeladenen Installer und drücken Sie auf **"weiter"**, bzw. **"installieren"**.
+        2. Navigieren Sie zu **"Andere Downloads"**.
+        3. Drücken Sie auf **"JDK 21 - LTS"** und wählen Sie die Version für Windows. Der Download sollte automatisch starten.
+        4. Öffnen Sie den soeben heruntergeladenen Installer und drücken Sie auf **"weiter"**, bzw. **"installieren"**.
             * Wählen Sie im Abschnitt **"Benutzerdefiniertes Setup"** bei **"JAVA_HOME-Variable konfigurieren"** die Option **"Wird auf der lokalen Festplatte installiert"** aus, indem Sie auf das rote Kreuz daneben drücken.
-        4. Nachdem die Installation abgeschlossen ist, drücken Sie **"Fertig stellen"**.
-    
+        5. Nachdem die Installation abgeschlossen ist, drücken Sie **"Fertig stellen"**.
+
 === "macOS"
     === "Homebrew"
         1. Falls noch nicht geschehen, installieren Sie [Homebrew].
         2. Führen Sie in einem [Terminal] folgenden Befehl aus, um Java zu installieren.
            ```
-           brew install java
+           brew install openjdk@21
            ```
         3. Am Ende der Installation stellt Homebrew einen Befehl bereit, welchen Sie kopieren und ausführen müssen. Der Befehl ähnelt dem folgenden, kann sich jedoch leicht unterscheiden:
            ```
@@ -41,8 +42,9 @@
 
     === "Manuell"
          1. Öffnen Sie die [Adoptium Website].
-         2. Drücken Sie auf **"Latest LTS Release"**. Der Download sollte automatisch starten.
-         3. Öffnen Sie den soeben heruntergeladenen Installer und drücken Sie auf **"Fortfahren"**, bzw. **"Installieren"**. Sie können die Standardeinstellungen übernehmen und müssen nichts Weiteres im Installer auswählen.
+         2. Navigieren Sie zu **"Andere Downloads"**.
+         3. Drücken Sie auf **"JDK 21 - LTS"** und wählen Sie die Version für macOS. Der Download sollte automatisch starten.
+         4. Öffnen Sie den soeben heruntergeladenen Installer und drücken Sie auf **"Fortfahren"**, bzw. **"Installieren"**. Sie können die Standardeinstellungen übernehmen und müssen nichts Weiteres im Installer auswählen.
 
 === "Linux"
     === "Debian/Ubuntu"
@@ -81,7 +83,7 @@
 java --version
 ```
 
-* Wenn die Ausgabe in etwa so aussieht, ist die Installation erfolgreich. Achten Sie insbesondere darauf, dass es Java 21 oder höher ist.
+* Wenn die Ausgabe in etwa so aussieht, ist die Installation erfolgreich. Achten Sie insbesondere darauf, dass es Java 21 ist.
     ```
     openjdk 21 2024-07-16
     ```
@@ -91,7 +93,7 @@ java --version
     ```
 ## Windows - Umgebungsvariablen einstellen
 
-* Falls bei der [Überprüfung der Installation] eine veraltete Java Version (<21) angezeigt wird, überprüfen Sie wie folgt, ob die Umgebungsvariablen korrekt gesetzt sind.:
+* Falls bei der [Überprüfung der Installation] eine andere Java Version (!= 21) angezeigt wird, überprüfen Sie wie folgt, ob die Umgebungsvariablen korrekt gesetzt sind.:
     1. Geben Sie in die Windowssuche (Win + S) **"Systemumgebungsvariablen bearbeiten"** ein und öffnen Sie das Fenster.
     2. Drücken Sie rechts unten auf **"Umgebungsvariablen"**.
     3. Überprüfen Sie, ob in der unteren Liste eine Variable namens **"JAVA_HOME"** existiert und auf das Verzeichnis, in welchem Java installiert ist, zeigt.
